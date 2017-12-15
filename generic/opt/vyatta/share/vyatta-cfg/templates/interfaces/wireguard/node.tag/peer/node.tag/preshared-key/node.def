@@ -1,3 +1,8 @@
 type: txt
 help: Optional preshared key
-val_help: File in /config/auth or 44-character (32-bytes) base64
+val_help: txt; 44-character (32-bytes) base64 key
+val_help: txt; Key file in /config/auth
+val_help: txt; Full path to key file
+
+syntax:expression: exec "if [[ !($VAR(@) =~ ^[0-9a-zA-Z/+]{43}=$) ]]; then key=$VAR(@); if [[ ${key} = ${key%/*} ]]; then key=\"/config/auth/$key\"; fi; [ -e $key ]; exit; fi";
+                   "Pre-shared key file $VAR(@) not found"
