@@ -1,7 +1,7 @@
 TAR ?= tar
 AR ?= ar
 
-all: deb-e50 deb-e100 deb-e200 deb-e300 deb-e1000 deb-ugw3 deb-ugw4 deb-ugwxg
+all: deb-e50 deb-e100 deb-e200 deb-e300 deb-e1000 #deb-ugw3 deb-ugw4 deb-ugwxg
 
 clean:
 	rm -rf package
