@@ -1,3 +1,6 @@
+# Big obnoxious message
+## This repository is now deprecated, future work will happen at https://github.com/WireGuard/wireguard-vyatta-ubnt.
+
 # vyatta-wireguard
 
 This is a Vyatta module and pre-built binaries for the Ubiquiti EdgeRouter
